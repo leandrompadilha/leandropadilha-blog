@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Quiz: Você saberia identificar um golpe?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #1e2a38;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    .options {
+      list-style: none;
+      padding: 0;
+    }
+    .options li {
+      background: #2e3e50;
+      margin: 10px 0;
+      padding: 12px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .options li:hover {
+      background: #3e5670;
+    }
+    .btn {
+      background: #00c9a7;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+    }
+    .btn:hover {
+      background: #00b39a;
+    }
+    .result {
+      text-align: center;
+      font-size: 1.3em;
+      margin-top: 30px;
+    }
+    .dica {
+      background: #2c3e50;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Mini Quiz: Você saberia identificar um golpe?</h1>
+    <div id="quiz">
+      <div class="question" id="questionText"></div>
+      <ul class="options" id="optionsList"></ul>
+      <button class="btn" id="nextBtn" style="display:none;">Próxima</button>
+    </div>
+    <div class="result" id="result" style="display:none;"></div>
+    <div class="dica" id="dica" style="display:none;"></div>
+  </div>
+
+  <script>
+    const perguntas = [
+      {
+        pergunta: "Você recebe uma ligação dizendo que sua conta foi invadida e precisa instalar um aplicativo para 'verificação'. O que você faz?",
+        opcoes: [
+          "Instalo o app imediatamente para proteger minha conta",
+          "Peço o nome do atendente e continuo a conversa",
+          "Desligo, não instalo nada e entro em contato com o banco pelos canais oficiais"
+        ],
+        correta: 2
+      },
+      {
+        pergunta: "Um amigo te manda mensagem no WhatsApp pedindo dinheiro urgente. O número é novo, mas tem a mesma foto. O que você faz?",
+        opcoes: [
+          "Faço o PIX para ajudar",
+          "Pergunto o motivo e envio metade do valor",
+          "Ligo para o amigo no número antigo para confirmar"
+        ],
+        correta: 2
+      },
+      {
+        pergunta: "Você encontra um carro em leilão online por R$ 12.000, bem abaixo da tabela FIPE. O site parece profissional. O que você verifica antes de pagar?",
+        opcoes: [
+          "Se o boleto está em nome de pessoa física",
+          "Se o leilão está registrado na Junta Comercial ou Tribunal de Justiça",
+          "Se o site tem fotos bonitas e depoimentos positivos"
+        ],
+        correta: 1
+      },
+      {
+        pergunta: "Você recebe um e-mail com um boleto para pagar a mensalidade da escola do seu filho. O nome do beneficiário é diferente do habitual. O que você faz?",
+        opcoes: [
+          "Paga normalmente, pois o valor está certo",
+          "Verifica com a escola antes de pagar",
+          "Paga e depois confirma com a secretaria"
+        ],
+        correta: 1
+      },
+      {
+        pergunta: "Um 'especialista' em investimentos promete retorno de 10% ao mês com criptomoedas. O que você pergunta?",
+        opcoes: [
+          "Qual o valor mínimo para começar",
+          "Se ele tem perfil no Instagram",
+          "Se a empresa é registrada na CVM"
+        ],
+        correta: 2
+      }
+    ];
+
+    let perguntasRestantes = [...perguntas];
+    let pontuacao = 0;
+    let perguntaAtual = null;
+
+    const questionText = document.getElementById("questionText");
+    const optionsList = document.getElementById("optionsList");
+    const nextBtn = document.getElementById("nextBtn");
+    const result = document.getElementById("result");
+    const dica = document.getElementById("dica");
+
+    function embaralhar(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function carregarPergunta() {
+      if (perguntasRestantes.length === 0) {
+        mostrarResultado();
+        return;
+      }
+
+      embaralhar(perguntasRestantes);
+      perguntaAtual = perguntasRestantes.pop();
+      questionText.textContent = perguntaAtual.pergunta;
+      optionsList.innerHTML = "";
+      nextBtn.style.display = "none";
+
+      perguntaAtual.opcoes.forEach((opcao, index) => {
+        const li = document.createElement("li");
+        li.textContent = opcao;
+        li.onclick = () => verificarResposta(index, li);
+        optionsList.appendChild(li);
+      });
+    }
+
+    function verificarResposta(indice, elemento) {
+      const opcoes = optionsList.querySelectorAll("li");
+      opcoes.forEach(li => li.style.pointerEvents = "none");
+
+      if (indice === perguntaAtual.correta) {
+        elemento.style.background = "#28a745";
+        pontuacao++;
+      } else {
+        elemento.style.background = "#dc3545";
+        opcoes[perguntaAtual.correta].style.background = "#28a745";
+      }
+
+      nextBtn.style.display = "block";
+    }
+
+    function mostrarResultado() {
+      document.getElementById("quiz").style.display = "none";
+      result.style.display = "block";
+      dica.style.display = "block";
+      result.textContent = `Você acertou ${pontuacao} de ${perguntas.length} perguntas.`;
+
+      if (pontuacao === 5) {
+        dica.textContent = "Parabéns! Você está muito bem preparado para evitar golpes.";
+      } else if (pontuacao >= 3) {
+        dica.textContent = "Você está no caminho certo! Reforce sua atenção nos sinais de alerta.";
+      } else {
+        dica.textContent = "Atenção! Leia o eBook com calma e compartilhe com quem precisa.";
+      }
+    }
+
+    nextBtn.onclick = carregarPergunta;
+
+    carregarPergunta();
+  </script>
+</body>
+</html>
