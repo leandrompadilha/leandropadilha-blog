@@ -85,53 +85,22 @@
   </div>
 
   <script>
-    const perguntas = [
-      {
-        pergunta: "Você recebe uma ligação dizendo que sua conta foi invadida e precisa instalar um aplicativo para 'verificação'. O que você faz?",
-        opcoes: [
-          "Instalo o app imediatamente para proteger minha conta",
-          "Peço o nome do atendente e continuo a conversa",
-          "Desligo, não instalo nada e entro em contato com o banco pelos canais oficiais"
-        ],
-        correta: 2
-      },
-      {
-        pergunta: "Um amigo te manda mensagem no WhatsApp pedindo dinheiro urgente. O número é novo, mas tem a mesma foto. O que você faz?",
-        opcoes: [
-          "Faço o PIX para ajudar",
-          "Pergunto o motivo e envio metade do valor",
-          "Ligo para o amigo no número antigo para confirmar"
-        ],
-        correta: 2
-      },
-      {
-        pergunta: "Você encontra um carro em leilão online por R$ 12.000, bem abaixo da tabela FIPE. O site parece profissional. O que você verifica antes de pagar?",
-        opcoes: [
-          "Se o boleto está em nome de pessoa física",
-          "Se o leilão está registrado na Junta Comercial ou Tribunal de Justiça",
-          "Se o site tem fotos bonitas e depoimentos positivos"
-        ],
-        correta: 1
-      },
-      {
-        pergunta: "Você recebe um e-mail com um boleto para pagar a mensalidade da escola do seu filho. O nome do beneficiário é diferente do habitual. O que você faz?",
-        opcoes: [
-          "Paga normalmente, pois o valor está certo",
-          "Verifica com a escola antes de pagar",
-          "Paga e depois confirma com a secretaria"
-        ],
-        correta: 1
-      },
-      {
-        pergunta: "Um 'especialista' em investimentos promete retorno de 10% ao mês com criptomoedas. O que você pergunta?",
-        opcoes: [
-          "Qual o valor mínimo para começar",
-          "Se ele tem perfil no Instagram",
-          "Se a empresa é registrada na CVM"
-        ],
-        correta: 2
-      }
-    ];
+
+<script>
+  let perguntas = [];
+
+  fetch('quiz_questions.json') 
+    .then(response => response.json())
+    .then(data => {
+      perguntas = data;
+      iniciarQuiz();
+    });
+
+  function iniciarQuiz() {
+    perguntasRestantes = [...perguntas];
+    carregarPergunta();
+  }
+
 
     let perguntasRestantes = [...perguntas];
     let pontuacao = 0;
