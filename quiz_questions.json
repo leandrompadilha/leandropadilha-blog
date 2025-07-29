@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Você recebe uma ligação dizendo que sua conta foi invadida e precisa instalar um aplicativo. O que você faz?",
+    "options": [
+      "Instalo o app imediatamente para proteger minha conta",
+      "Peço o nome do atendente e continuo a conversa",
+      "Desligo, não instalo nada e entro em contato com o banco pelos canais oficiais"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Um amigo te manda mensagem no WhatsApp pedindo dinheiro urgente. O número é novo, mas tem a mesma foto. O que você faz?",
+    "options": [
+      "Faço o PIX para ajudar",
+      "Pergunto o motivo e envio metade do valor",
+      "Ligo para o amigo no número antigo para confirmar"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Você encontra um carro em leilão online por R$ 12.000, bem abaixo da tabela FIPE. O site parece profissional. O que você verifica antes de pagar?",
+    "options": [
+      "Se o boleto está em nome de pessoa física",
+      "Se o leilão está registrado na Junta Comercial ou Tribunal de Justiça",
+      "Se o site tem fotos bonitas e depoimentos positivos"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Você recebe um e-mail com um boleto para pagar a mensalidade da escola do seu filho. O nome do beneficiário é diferente do habitual. O que você faz?",
+    "options": [
+      "Paga normalmente, pois o valor está certo",
+      "Verifica com a escola antes de pagar",
+      "Paga e depois confirma com a secretaria"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Um 'especialista' em investimentos promete retorno de 10% ao mês com criptomoedas. O que você pergunta?",
+    "options": [
+      "Qual o valor mínimo para começar",
+      "Se ele tem perfil no Instagram",
+      "Se a empresa é registrada na CVM"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Pergunta de exemplo número 6: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 7: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 8: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 9: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 10: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 11: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 12: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 13: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 14: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 15: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 16: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 17: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 18: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 19: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 20: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 21: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 22: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 23: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 24: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 25: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 26: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 27: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 28: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 29: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 30: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 31: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 32: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 33: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 34: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 35: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 36: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 37: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 38: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 39: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 40: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 41: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 42: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 43: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 44: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 45: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 46: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 47: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 48: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 49: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 50: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 51: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 52: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 53: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 54: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 55: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 56: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 57: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 58: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 59: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 60: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 61: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 62: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 63: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 64: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 65: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 66: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 67: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 68: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 69: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 70: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 71: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 72: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 73: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 74: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 75: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 76: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 77: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 78: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 79: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 80: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 81: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 82: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 83: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 84: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 85: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 86: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 87: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 88: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 89: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 90: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 91: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 92: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 93: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 94: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 95: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 96: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 97: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 98: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 99: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Pergunta de exemplo número 100: Como você reagiria a uma situação suspeita?",
+    "options": [
+      "Confio e sigo as instruções",
+      "Verifico com alguém de confiança antes de agir",
+      "Ignoro e sigo em frente sem pensar"
+    ],
+    "answer": 1
+  }
+]
