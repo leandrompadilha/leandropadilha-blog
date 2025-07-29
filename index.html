@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mini Quiz: Você saberia identificar um golpe?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -29,9 +28,7 @@
     .question {
       font-size: 1.2em;
       margin-bottom: 15px;
-    }
-    .options {
-      list-style: none;
+   -style: none;
       padding: 0;
     }
     .options li {
@@ -79,38 +76,31 @@
       <div class="question" id="questionText"></div>
       <ul class="options" id="optionsList"></ul>
       <button class="btn" id="nextBtn" style="display:none;">Próxima</button>
+      <button class="btn" id="restartBtn" style="display:none;">Reiniciar Quiz</button>
     </div>
     <div class="result" id="result" style="display:none;"></div>
     <div class="dica" id="dica" style="display:none;"></div>
   </div>
 
   <script>
-
-<script>
-  let perguntas = [];
-
-  fetch('quiz_questions.json') 
-    .then(response => response.json())
-    .then(data => {
-      perguntas = data;
-      iniciarQuiz();
-    });
-
-  function iniciarQuiz() {
-    perguntasRestantes = [...perguntas];
-    carregarPergunta();
-  }
-
-
-    let perguntasRestantes = [...perguntas];
+    let perguntas = [];
+    let perguntasRestantes = [];
     let pontuacao = 0;
     let perguntaAtual = null;
 
     const questionText = document.getElementById("questionText");
     const optionsList = document.getElementById("optionsList");
     const nextBtn = document.getElementById("nextBtn");
+    const restartBtn = document.getElementById("restartBtn");
     const result = document.getElementById("result");
     const dica = document.getElementById("dica");
+
+    fetch('quiz_questions.json') 
+      .then(response => response.json())
+      .then(data => {
+        perguntas = data;
+        iniciarQuiz();
+      });
 
     function embaralhar(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -119,13 +109,24 @@
       }
     }
 
+    function iniciarQuiz() {
+      embaralhar(perguntas);
+      perguntasRestantes = perguntas.slice(0, 5);
+      pontuacao = 0;
+      perguntaAtual = null;
+      document.getElementById("quiz").style.display = "block";
+      result.style.display = "none";
+      dica.style.display = "none";
+      restartBtn.style.display = "none";
+      carregarPergunta();
+    }
+
     function carregarPergunta() {
       if (perguntasRestantes.length === 0) {
         mostrarResultado();
         return;
       }
 
-      embaralhar(perguntasRestantes);
       perguntaAtual = perguntasRestantes.pop();
       questionText.textContent = perguntaAtual.pergunta;
       optionsList.innerHTML = "";
@@ -158,7 +159,8 @@
       document.getElementById("quiz").style.display = "none";
       result.style.display = "block";
       dica.style.display = "block";
-      result.textContent = `Você acertou ${pontuacao} de ${perguntas.length} perguntas.`;
+      restartBtn.style.display = "block";
+      result.textContent = `Você acertou ${pontuacao} de 5 perguntas.`;
 
       if (pontuacao === 5) {
         dica.textContent = "Parabéns! Você está muito bem preparado para evitar golpes.";
@@ -170,8 +172,7 @@
     }
 
     nextBtn.onclick = carregarPergunta;
-
-    carregarPergunta();
+    restartBtn.onclick = iniciarQuiz;
   </script>
 </body>
 </html>
