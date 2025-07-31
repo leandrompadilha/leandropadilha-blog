@@ -2,38 +2,38 @@
   {
     "question": "Você vê uma oferta de carro muito barato em um site desconhecido. Qual atitude tomar?",
     "options": [
-      "Faço o pagamento logo para não perder a oferta",
       "Verifico se o site é oficial e pesquiso o CNPJ",
+      "Faço o pagamento logo para não perder a oferta",
       "Peço para parcelar no cartão"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Uma pessoa com sua foto pede dinheiro para amigos no WhatsApp. O que isso indica?",
     "options": [
-      "Você foi clonado",
       "Você está com sorte",
+      "Você foi clonado",
       "É coincidência"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "question": "Um site promete investimento com retorno certo e rápido. Você deve?",
     "options": [
       "Investir logo para aproveitar",
-      "Consultar a CVM e pesquisar a empresa",
-      "Pedir dicas a conhecidos"
+      "Pedir dicas a conhecidos",
+      "Consultar a CVM e pesquisar a empresa"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Recebe um comprovante de PIX, mas o dinheiro não caiu. O que fazer?",
     "options": [
-      "Entrego o produto mesmo assim",
       "Espero cair na conta antes de entregar",
+      "Entrego o produto mesmo assim",
       "Peço outro comprovante"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe um boleto para pagar a escola, mas o nome está diferente. O que fazer?",
@@ -56,11 +56,11 @@
   {
     "question": "Uma pessoa diz que te ama e pede dinheiro pela internet. O que pode ser isso?",
     "options": [
-      "Um namoro moderno",
       "Um golpe afetivo",
+      "Um namoro moderno",
       "Uma ajuda de verdade"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Alguém diz que precisa atualizar seu celular e pede pra instalar um app. O que fazer?",
@@ -83,11 +83,11 @@
   {
     "question": "Oferecem emprego com salário alto, mas pedem taxa para entrevista. O que fazer?",
     "options": [
+      "Desconfiar, pode ser golpe",
       "Pagar e garantir a vaga",
-      "Perguntar sobre os benefícios",
-      "Desconfiar, pode ser golpe"
+      "Perguntar sobre os benefícios"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "question": "Você recebe uma ligação dizendo que seu celular está com vírus. O que fazer?",
@@ -102,19 +102,19 @@
     "question": "Um técnico liga dizendo que é do banco e pede para instalar um programa. Qual atitude tomar?",
     "options": [
       "Instalo para resolver rápido",
-      "Peço ajuda de um familiar antes",
-      "Sigo as instruções para evitar problemas"
+      "Sigo as instruções para evitar problemas",
+      "Peço ajuda de um familiar antes"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Recebe uma mensagem dizendo que precisa mandar seu cartão cortado. Isso é correto?",
     "options": [
-      "Sim, se for do banco",
       "Não, pode ser golpe",
+      "Sim, se for do banco",
       "Sim, se vier com protocolo"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Aparece um site vendendo carro barato demais. O que fazer?",
@@ -129,10 +129,10 @@
     "question": "Você recebe um SMS pedindo para clicar num link urgente. Qual a melhor ação?",
     "options": [
       "Clicar e seguir o que pedirem",
-      "Ignorar e apagar a mensagem",
-      "Responder perguntando o motivo"
+      "Responder perguntando o motivo",
+      "Ignorar e apagar a mensagem"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Alguém manda uma promoção de investimento que rende 10% ao mês. Isso é confiável?",
@@ -156,8 +156,8 @@
     "question": "Você vê um vídeo no WhatsApp com uma promoção de emprego, pedindo R$ 50 de inscrição. O que fazer?",
     "options": [
       "Pagar porque parece verdadeiro",
-      "Pedir ajuda de um familiar",
-      "Verificar a empresa antes de pagar"
+      "Perguntar se não é golpe antes de pagar",
+      "Pedir ajuda de um familiar para verificar"
     ],
     "answer": 2
   },
@@ -173,29 +173,29 @@
   {
     "question": "Você recebeu um boleto por WhatsApp. Como saber se é verdadeiro?",
     "options": [
-      "Conferindo o nome do beneficiário e valor",
       "Pagando logo para não atrasar",
+      "Conferindo o nome do beneficiário e valor",
       "Perguntando no grupo da família"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "question": "Pergunta preventiva sobre golpe. O que fazer?",
     "options": [
-      "Agir com calma e verificar tudo",
       "Confiar se for urgente",
-      "Seguir instruções recebidas"
+      "Seguir instruções recebidas",
+      "Agir com calma e verificar tudo"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "question": "Você recebe uma ligação dizendo que seu celular tem vírus. O que fazer?",
     "options": [
-      "Seguir as instruções da ligação",
       "Desligar e procurar alguém de confiança",
+      "Seguir as instruções da ligação",
       "Passar seus dados para resolver logo"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Alguém diz que é do banco e pede para instalar um aplicativo no seu celular. Você deve:",
@@ -210,19 +210,19 @@
     "question": "Você vê um anúncio de carro com preço muito abaixo do normal. O que fazer?",
     "options": [
       "Depositar logo para garantir",
-      "Pesquisar o site e o CNPJ",
-      "Pedir mais desconto"
+      "Pedir mais desconto",
+      "Pesquisar o site e o CNPJ"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Uma pessoa diz que trabalha no banco e pede seu cartão cortado. Isso é certo?",
     "options": [
+      "Não, pode ser golpe",
       "Sim, é seguro",
-      "Sim, se o cartão estiver cortado",
-      "Não, pode ser golpe"
+      "Sim, se o cartão estiver cortado"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "question": "Você recebe um boleto por WhatsApp. O que deve fazer?",
@@ -237,19 +237,19 @@
     "question": "Você encontra um site de leilão com preços muito baixos. O que fazer?",
     "options": [
       "Pagar logo para aproveitar",
-      "Verificar se o site é oficial e pesquisar o CNPJ",
-      "Confiar se tiver fotos reais"
+      "Confiar se tiver fotos reais",
+      "Verificar se o site é oficial e pesquisar o CNPJ"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Um amigo pede dinheiro pelo WhatsApp, mas o número é novo. O que fazer?",
     "options": [
-      "Fazer o PIX rápido para ajudar",
       "Ligar para o número antigo da pessoa",
+      "Fazer o PIX rápido para ajudar",
       "Pedir um áudio para confirmar"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Uma pessoa diz que errou um PIX e pede o dinheiro de volta. O que fazer?",
@@ -264,7 +264,7 @@
     "question": "Oferecem um emprego com salário alto, mas pedem uma taxa. O que fazer?",
     "options": [
       "Pagar e garantir a vaga",
-      "Verificar se a empresa é real",
+      "Verificar se a empresa existe e pagar em seguida",
       "Desconfiar, pode ser golpe"
     ],
     "answer": 2
@@ -272,11 +272,11 @@
   {
     "question": "Um suposto técnico pede acesso remoto ao seu celular. Você deve:",
     "options": [
-      "Dar acesso para resolver rápido",
       "Consultar alguém da família primeiro",
+      "Dar acesso para resolver rápido",
       "Confiar se ele usar palavras difíceis"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Recebe um comprovante de PIX, mas o dinheiro não caiu. O que fazer?",
@@ -291,19 +291,19 @@
     "question": "Você ganha um prêmio, mas precisa pagar para receber. Isso é normal?",
     "options": [
       "Sim, todo prêmio cobra taxa",
-      "Não, é um golpe",
-      "Sim, se o valor for baixo"
+      "Sim, se o valor for baixo",
+      "Não, é um golpe"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você vê um site de investimento prometendo lucro garantido. Você deve:",
     "options": [
-      "Investir logo para não perder",
       "Verificar se está registrado na CVM",
+      "Investir logo para não perder",
       "Pedir ajuda a amigos"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Recebe SMS pedindo para clicar em um link urgente. O que fazer?",
@@ -318,19 +318,19 @@
     "question": "Alguém te liga dizendo que seu CPF está envolvido em fraude. Você deve:",
     "options": [
       "Seguir as instruções da pessoa",
-      "Desligar e consultar um canal oficial",
-      "Passar seus documentos para verificar"
+      "Passar seus documentos para verificar",
+      "Desligar e consultar um canal oficial"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Um site falso envia boleto de uma escola com nome diferente. O que fazer?",
     "options": [
-      "Pagar para não atrasar",
       "Confirmar com a escola antes de pagar",
+      "Pagar para não atrasar",
       "Pagar se o valor estiver certo"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Um conhecido diz que é possível ganhar 10% ao mês investindo com ele. Você deve:",
@@ -345,19 +345,19 @@
     "question": "Uma mensagem no WhatsApp diz que você ganhou um sorteio. O que fazer?",
     "options": [
       "Ver se precisa pagar alguma taxa",
-      "Conferir se o sorteio é verdadeiro",
-      "Compartilhar com os contatos"
+      "Compartilhar com os contatos",
+      "Conferir se o sorteio é verdadeiro"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "O que fazer se pedirem seus dados bancários por telefone?",
     "options": [
-      "Fornecer se for do banco",
       "Desligar na hora",
+      "Fornecer se for do banco",
       "Confiar se tiverem seu CPF"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Alguém te oferece dinheiro fácil se você emprestar sua conta bancária. Isso é:",
@@ -372,19 +372,19 @@
     "question": "Alguém manda um link dizendo que é para atualizar o WhatsApp. O que fazer?",
     "options": [
       "Clicar no link e atualizar",
-      "Ignorar e verificar na loja oficial de aplicativos",
-      "Pedir ajuda para um desconhecido"
+      "Pedir ajuda para um desconhecido",
+      "Ignorar e verificar na loja oficial de aplicativos"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe uma proposta de empréstimo fácil pela internet. O que deve fazer?",
     "options": [
-      "Pagar a taxa para liberar o valor",
       "Conferir se a empresa é verdadeira e registrada",
+      "Pagar a taxa para liberar o valor",
       "Aceitar logo para não perder a chance"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você vê um vídeo no WhatsApp prometendo emprego fácil. O que fazer?",
@@ -399,19 +399,19 @@
     "question": "O que fazer quando alguém pede sua senha dizendo que é segurança do banco?",
     "options": [
       "Passar a senha para resolver logo",
-      "Nunca informar senha a ninguém",
-      "Confiar se a pessoa for educada"
+      "Confiar se a pessoa for educada",
+      "Nunca informar senha a ninguém"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Uma mensagem diz que você precisa pagar para limpar seu nome. O que fazer?",
     "options": [
-      "Pagar logo para limpar o nome",
       "Verificar com o Serasa ou SPC oficialmente",
+      "Pagar logo para limpar o nome",
       "Aceitar se parecer urgente"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Te pedem foto de documentos por mensagem. É seguro?",
@@ -426,19 +426,19 @@
     "question": "Uma empresa promete investir seu dinheiro e devolver em dobro. Você deve:",
     "options": [
       "Confiar se o site for bonito",
-      "Verificar se está cadastrada na CVM",
-      "Investir logo para não perder a chance"
+      "Investir logo para não perder a chance",
+      "Verificar se está cadastrada na CVM"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe um e-mail com um link estranho dizendo que precisa atualizar cadastro. O que fazer?",
     "options": [
-      "Clicar e atualizar logo",
       "Apagar o e-mail e acessar o site oficial por conta própria",
+      "Clicar e atualizar logo",
       "Repassar para o grupo da família"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você vê um anúncio que diz: 'sem consulta ao SPC, dinheiro fácil'. Isso é:",
@@ -452,11 +452,11 @@
   {
     "question": "Você recebeu um código por SMS sem pedir nada. O que fazer?",
     "options": [
-      "Ignorar e não passar para ninguém",
       "Enviar para quem te pedir",
-      "Digitar no aplicativo para ver o que acontece"
+      "Digitar no aplicativo para ver o que acontece",
+      "Ignorar e não passar para ninguém"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "question": "Você acessa um site e ele pede seus dados bancários. O que deve fazer?",
@@ -470,20 +470,20 @@
   {
     "question": "Você encontra uma oferta de celular novo por metade do preço. O que fazer?",
     "options": [
-      "Verificar a reputação da loja",
       "Comprar logo para aproveitar",
+      "Verificar a reputação da loja",
       "Pedir para parcelar em 12 vezes"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "question": "Recebe uma ligação dizendo que há uma compra suspeita no seu cartão. O que fazer?",
     "options": [
       "Passar os dados do cartão para cancelar",
-      "Desligar e ligar para o número oficial do banco",
-      "Confiar se a pessoa souber seu nome"
+      "Confiar se a pessoa souber seu nome",
+      "Desligar e ligar para o número oficial do banco"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Uma pessoa diz que te ama e pede dinheiro pela internet. Pode ser:",
@@ -507,19 +507,19 @@
     "question": "Te mandam um QR Code por WhatsApp para pagar uma conta. O que fazer?",
     "options": [
       "Escanear e pagar logo",
-      "Confirmar com a empresa se é verdadeiro",
-      "Confiar se o valor estiver certo"
+      "Confiar se o valor estiver certo",
+      "Confirmar com a empresa se é verdadeiro"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "O banco manda um motoboy buscar seu cartão. Isso é certo?",
     "options": [
-      "Sim, se for urgente",
       "Não, é golpe",
+      "Sim, se for urgente",
       "Sim, se pedirem educadamente"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe uma cobrança por e-mail com nome estranho. O que fazer?",
@@ -534,19 +534,19 @@
     "question": "Recebe mensagem dizendo que seu CPF foi usado em crime. O que fazer?",
     "options": [
       "Ligar para o número que mandaram",
-      "Conferir com o banco ou Polícia Civil",
-      "Passar seus dados para provar inocência"
+      "Passar seus dados para provar inocência",
+      "Conferir com o banco ou Polícia Civil"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você está vendendo algo e o comprador manda comprovante de PIX. O que deve fazer?",
     "options": [
-      "Entregar o produto logo",
       "Conferir se o valor caiu na conta",
+      "Entregar o produto logo",
       "Confiar se o nome for conhecido"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe uma ligação com uma voz de parente pedindo dinheiro urgente. O que fazer?",
@@ -561,19 +561,19 @@
     "question": "Você vê um site com promoções de TV por R$ 300. O que fazer?",
     "options": [
       "Comprar rápido para aproveitar",
-      "Pesquisar se o site é confiável",
-      "Pagar no boleto que é mais seguro"
+      "Pagar no boleto que é mais seguro",
+      "Pesquisar se o site é confiável"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Uma mensagem diz que seu nome foi usado para abrir conta. O que fazer?",
     "options": [
-      "Enviar seus documentos por mensagem",
       "Ligar para o banco pelo telefone oficial",
+      "Enviar seus documentos por mensagem",
       "Passar seus dados para resolver logo"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Alguém diz que precisa usar sua conta bancária para receber um valor. Isso é:",
@@ -588,19 +588,19 @@
     "question": "Você encontra uma oferta de passagem aérea muito barata. O que fazer?",
     "options": [
       "Comprar logo para aproveitar",
-      "Ver se o site é confiável e oficial",
-      "Pagar por PIX que é mais rápido"
+      "Pagar por PIX que é mais rápido",
+      "Ver se o site é confiável e oficial"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe um e-mail dizendo que seu imposto está atrasado. O que fazer?",
     "options": [
-      "Clicar no link e pagar",
       "Consultar no site oficial da Receita Federal",
+      "Clicar no link e pagar",
       "Pagar logo no boleto anexo"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Recebe mensagem pedindo para confirmar dados de aposentadoria. O que fazer?",
@@ -615,46 +615,46 @@
     "question": "Uma pessoa diz que vai te ensinar a ganhar dinheiro com apostas. O que fazer?",
     "options": [
       "Investir logo o que puder",
-      "Desconfiar, pode ser golpe",
-      "Tentar com pouco dinheiro só"
+      "Tentar com pouco dinheiro só",
+      "Desconfiar, pode ser golpe"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe uma cobrança de uma loja onde nunca comprou. O que fazer?",
     "options": [
-      "Pagar para não sujar o nome",
       "Confirmar a dívida antes de qualquer coisa",
+      "Pagar para não sujar o nome",
       "Ignorar se o valor for pequeno"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Prometem limpar seu nome em troca de um pagamento. Isso é seguro?",
     "options": [
-      "Não, pode ser golpe",
       "Sim, se for por boleto",
+      "Não, pode ser golpe",
       "Sim, se for parcelado"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "question": "Recebe uma ligação de alguém dizendo que é da Polícia Federal. O que fazer?",
     "options": [
       "Fazer o que ele pedir",
-      "Desligar e verificar com fontes oficiais",
-      "Passar seus documentos para colaborar"
+      "Passar seus documentos para colaborar",
+      "Desligar e verificar com fontes oficiais"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Alguém diz que está com um processo contra você e pede seus dados. O que fazer?",
     "options": [
-      "Passar seus dados para resolver",
       "Consultar um advogado ou o Tribunal",
+      "Passar seus dados para resolver",
       "Ignorar e bloquear o número"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você vê um link no Facebook dizendo que ganhou um prêmio. O que fazer?",
@@ -669,19 +669,19 @@
     "question": "Prometem dobrar seu dinheiro em 24 horas. Isso é confiável?",
     "options": [
       "Sim, se for por PIX",
-      "Não, provavelmente é golpe",
-      "Sim, se outras pessoas fizeram"
+      "Sim, se outras pessoas fizeram",
+      "Não, provavelmente é golpe"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe uma proposta para trabalhar em casa ganhando muito. O que fazer?",
     "options": [
-      "Pagar a taxa para começar",
       "Verificar se é uma empresa real",
+      "Pagar a taxa para começar",
       "Aceitar logo para não perder"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Enviaram um link de promoção por mensagem de um número estranho. O que fazer?",
@@ -696,19 +696,19 @@
     "question": "Você quer vender algo e a pessoa diz que vai mandar o motoboy. O que fazer?",
     "options": [
       "Entregar o produto com o comprovante",
-      "Confirmar se o valor caiu na conta primeiro",
-      "Mandar o produto depois por confiança"
+      "Mandar o produto depois por confiança",
+      "Confirmar se o valor caiu na conta primeiro"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Uma empresa te liga oferecendo cartão de crédito com limite alto. O que fazer?",
     "options": [
-      "Aceitar e passar seus dados",
       "Desconfiar e pesquisar sobre a empresa",
+      "Aceitar e passar seus dados",
       "Confirmar se pedir só o CPF"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você quer consultar o CPF e encontra um site estranho. O que fazer?",
@@ -723,19 +723,19 @@
     "question": "Você está em um grupo no WhatsApp com dicas de investimento. O que fazer?",
     "options": [
       "Investir o que puder",
-      "Verificar se a corretora é registrada na CVM",
-      "Confiar se parecerem experientes"
+      "Confiar se parecerem experientes",
+      "Verificar se a corretora é registrada na CVM"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe uma mensagem dizendo que um pacote está preso na alfândega e precisa pagar uma taxa. O que fazer?",
     "options": [
-      "Pagar a taxa para liberar o pacote",
       "Verificar com os correios ou transportadora",
+      "Pagar a taxa para liberar o pacote",
       "Aceitar se o valor for pequeno"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe um link dizendo que ganhou um vale-compras, mas precisa pagar uma taxa. O que fazer?",
@@ -750,19 +750,19 @@
     "question": "Você vê uma promoção de produto eletrônico com preço abaixo do mercado. O que fazer?",
     "options": [
       "Comprar logo para aproveitar",
-      "Pesquisar sobre a loja e o vendedor",
-      "Pagar no boleto para garantir o desconto"
+      "Pagar no boleto para garantir o desconto",
+      "Pesquisar sobre a loja e o vendedor"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você encontra um anúncio de emprego que pede pagamento para curso. O que fazer?",
     "options": [
-      "Pagar para garantir a vaga",
       "Verificar a empresa e pesquisar sobre a vaga",
+      "Pagar para garantir a vaga",
       "Acreditar que todos cobram taxas"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe um link dizendo que seu WhatsApp foi clonado. O que fazer?",
@@ -777,19 +777,19 @@
     "question": "Você encontra um site de vendas de carros e ele pede pagamento antecipado. O que fazer?",
     "options": [
       "Pagar logo para garantir o carro",
-      "Pesquisar sobre a loja e o site",
-      "Confiar se o site for bem feito"
+      "Confiar se o site for bem feito",
+      "Pesquisar sobre a loja e o site"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Alguém pede para fazer um pagamento antecipado para liberar um prêmio. Isso é:",
     "options": [
-      "Normal, pois todo prêmio cobra uma taxa",
       "Um possível golpe, desconfie",
+      "Normal, pois todo prêmio cobra uma taxa",
       "Uma prática comum em promoções"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Recebe uma mensagem dizendo que você precisa atualizar seus dados bancários. O que fazer?",
@@ -804,19 +804,19 @@
     "question": "Você está vendendo algo e o comprador pede seus dados pessoais. O que fazer?",
     "options": [
       "Enviar os dados para garantir a venda",
-      "Verificar a reputação do comprador",
-      "Fazer o envio sem preocupação"
+      "Fazer o envio sem preocupação",
+      "Verificar a reputação do comprador"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você encontra um site de empréstimo que diz aprovar crédito rápido. O que fazer?",
     "options": [
-      "Preencher a solicitação logo",
       "Verificar a empresa e o CNPJ do site",
+      "Preencher a solicitação logo",
       "Pedir ajuda a um amigo para preencher"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe uma ligação de alguém dizendo que seu cartão foi clonado. O que fazer?",
@@ -831,19 +831,19 @@
     "question": "Você é convidado para um sorteio, mas precisa pagar uma taxa. Isso é:",
     "options": [
       "Normal, todo sorteio cobra taxa",
-      "Possível golpe, desconfiar",
-      "Comum, se for um sorteio famoso"
+      "Comum, se for um sorteio famoso",
+      "Possível golpe, desconfiar"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe um e-mail pedindo para atualizar sua conta bancária. O que fazer?",
     "options": [
-      "Clicar no link e atualizar os dados",
       "Verificar o e-mail e entrar em contato com o banco diretamente",
+      "Clicar no link e atualizar os dados",
       "Responder ao e-mail e pedir mais informações"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você recebe uma proposta de venda muito vantajosa, mas pede pagamento antecipado. O que fazer?",
@@ -858,19 +858,19 @@
     "question": "Você recebe uma oferta de cartão de crédito com limite alto, mas precisa pagar uma taxa. O que fazer?",
     "options": [
       "Pagar para garantir o limite",
-      "Verificar se a empresa é legítima e autorizada",
-      "Confiar se o banco for conhecido"
+      "Confiar se o banco for conhecido",
+      "Verificar se a empresa é legítima e autorizada"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe um e-mail de um banco dizendo que há uma transação suspeita. O que fazer?",
     "options": [
-      "Fornecer os dados para verificar a transação",
       "Verificar com o banco diretamente usando canais oficiais",
+      "Fornecer os dados para verificar a transação",
       "Clicar no link para confirmar a transação"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Recebe um link pedindo para verificar uma compra, mas não lembra de ter feito. O que fazer?",
@@ -885,19 +885,19 @@
     "question": "Alguém oferece dinheiro fácil por meio de um aplicativo. Isso pode ser:",
     "options": [
       "Uma oportunidade real",
-      "Um golpe, desconfie sempre",
-      "Uma ajuda de alguém conhecido"
+      "Uma ajuda de alguém conhecido",
+      "Um golpe, desconfie sempre"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Recebe uma ligação dizendo que seu CPF foi bloqueado. O que fazer?",
     "options": [
-      "Fornecer seus dados para desbloquear",
       "Verificar a situação diretamente no site oficial do governo",
+      "Fornecer seus dados para desbloquear",
       "Aceitar a ajuda e fornecer as informações"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você encontra uma promoção de curso online muito barato. O que fazer?",
@@ -912,19 +912,19 @@
     "question": "Você recebe uma mensagem dizendo que tem dinheiro esquecido no banco. O que fazer?",
     "options": [
       "Clicar no link enviado",
-      "Consultar no site oficial do Banco Central",
-      "Responder pedindo mais informações"
+      "Responder pedindo mais informações",
+      "Consultar no site oficial do Banco Central"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Uma pessoa diz que está com problemas e pede para usar seu nome em um contrato. O que fazer?",
     "options": [
-      "Emprestar o nome para ajudar",
       "Recusar e explicar que isso pode te prejudicar",
+      "Emprestar o nome para ajudar",
       "Assinar se for amigo ou parente"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você está em um grupo que promete ganhar dinheiro indicando pessoas. Isso pode ser:",
@@ -939,19 +939,19 @@
     "question": "Recebe um código por SMS e alguém te liga pedindo esse código. O que fazer?",
     "options": [
       "Passar o código se pedirem com urgência",
-      "Nunca passar o código para ninguém",
-      "Esperar uma nova ligação para decidir"
+      "Esperar uma nova ligação para decidir",
+      "Nunca passar o código para ninguém"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você encontra um anúncio que usa a imagem de um famoso para vender algo. O que fazer?",
     "options": [
-      "Confiar porque o famoso está na propaganda",
       "Pesquisar se a pessoa realmente faz parte da promoção",
+      "Confiar porque o famoso está na propaganda",
       "Comprar logo para aproveitar o desconto"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Alguém te oferece um curso online gratuito, mas pede CPF e dados bancários. O que fazer?",
@@ -966,19 +966,19 @@
     "question": "Você está usando Wi-Fi público e acessa seu banco. Isso é seguro?",
     "options": [
       "Sim, se for rápido",
-      "Não, pode expor seus dados",
-      "Sim, se não pedir senha"
+      "Sim, se não pedir senha",
+      "Não, pode expor seus dados"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "question": "Você recebe um link para participar de um sorteio urgente. O que fazer?",
     "options": [
-      "Clicar logo para não perder",
       "Desconfiar e pesquisar se é verdadeiro",
+      "Clicar logo para não perder",
       "Pedir para alguém clicar por você"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "question": "Você vê um anúncio dizendo que pode limpar seu nome em 1 dia. O que fazer?",
@@ -993,9 +993,9 @@
     "question": "Você recebe um boleto por e-mail, mas nota que o nome do beneficiário está diferente. O que fazer?",
     "options": [
       "Pagar se o valor estiver certo",
-      "Conferir com a empresa antes de pagar",
-      "Ignorar se for um valor pequeno"
+      "Ignorar se for um valor pequeno",
+      "Conferir com a empresa antes de pagar"
     ],
-    "answer": 1
+    "answer": 2
   }
 ]

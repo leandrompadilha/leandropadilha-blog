@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mini Quiz: Você saberia identificar um golpe?</title>
+  <link rel="icon" type="image/png" href="src\image\icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -235,15 +236,68 @@
       dica.style.display = "block";
       restartBtn.style.display = "block";
 
-      result.textContent = `Você acertou ${pontuacao} de ${perguntasSelecionadas.length} perguntas.`;
+      const porcentagemAcerto = (pontuacao / perguntasSelecionadas.length) * 100;
+
+      let nivel, emoji, estatistica, mensagem, cor;
 
       if (pontuacao === 5) {
-        dica.textContent = "Parabéns! Você está muito bem preparado para evitar golpes.";
-      } else if (pontuacao >= 3) {
-        dica.textContent = "Você está no caminho certo! Reforce sua atenção nos sinais de alerta.";
+        nivel = "Especialista em Segurança";
+        emoji = "🏆";
+        estatistica = "apenas 8% das pessoas";
+        mensagem = "Incrível! Você está no topo dos mais preparados para evitar golpes. Seu conhecimento é excepcional e você faz parte de uma elite de pessoas conscientes sobre segurança digital.";
+        cor = "#FFD700";
+      } else if (pontuacao === 4) {
+        nivel = "Guardião Experiente";
+        emoji = "🛡️";
+        estatistica = "apenas 25% das pessoas";
+        mensagem = "Excelente! Você tem um conhecimento sólido sobre golpes e está muito bem preparado. Continue atento aos detalhes para se tornar um especialista.";
+        cor = "#00c9a7";
+      } else if (pontuacao === 3) {
+        nivel = "Detetive em Treinamento";
+        emoji = "🕵️";
+        estatistica = "cerca de 40% das pessoas";
+        mensagem = "Bom trabalho! Você já conhece os principais sinais de golpes, mas ainda há espaço para melhorar. Estude mais sobre os métodos mais sutis dos golpistas.";
+        cor = "#17a2b8";
+      } else if (pontuacao === 2) {
+        nivel = "Aprendiz Consciente";
+        emoji = "📚";
+        estatistica = "aproximadamente 60% das pessoas";
+        mensagem = "Você está começando a desenvolver sua consciência sobre golpes. É importante estudar mais e ficar atento aos sinais de alerta no dia a dia.";
+        cor = "#ffc107";
+      } else if (pontuacao === 1) {
+        nivel = "Iniciante Vulnerável";
+        emoji = "⚠️";
+        estatistica = "cerca de 80% das pessoas";
+        mensagem = "Atenção! Você precisa urgentemente aprender mais sobre golpes. Leia nosso material com cuidado e compartilhe com familiares para se protegerem juntos.";
+        cor = "#fd7e14";
       } else {
-        dica.textContent = "Atenção! Leia o eBook com calma e compartilhe com quem precisa.";
+        nivel = "Alvo Fácil";
+        emoji = "🚨";
+        estatistica = "90% das pessoas";
+        mensagem = "Cuidado máximo! Você está muito vulnerável a golpes. É essencial que estude nosso material e busque orientação para se proteger. Não navegue sozinho!";
+        cor = "#dc3545";
       }
+
+      result.innerHTML = `
+        <div style="color: ${cor}; font-size: 1.1em; margin-bottom: 15px;">
+          ${emoji} <strong>${nivel}</strong>
+        </div>
+        <div style="font-size: 1.4em; margin-bottom: 10px;">
+          ${pontuacao}/5 acertos (${porcentagemAcerto}%)
+        </div>
+        <div style="font-size: 0.9em; color: #00c9a7; margin-bottom: 20px;">
+          Você está no mesmo nível que ${estatistica} conseguem alcançar
+        </div>
+      `;
+
+      dica.innerHTML = `
+        <div style="line-height: 1.6;">
+          ${mensagem}
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #3e5670; font-size: 0.9em; color: #a0a9b8;">
+          💡 <strong>Dica:</strong> ${pontuacao >= 4 ? 'Compartilhe este quiz com amigos e familiares!' : 'Leia nosso eBook com dicas valiosas para aprender mais sobre proteção contra golpes.'}
+        </div>
+      `;
     }
 
     carregarPerguntas();
