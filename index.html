@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mini Quiz: Você saberia identificar um golpe?</title>
-  https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -28,7 +28,9 @@
     .question {
       font-size: 1.2em;
       margin-bottom: 15px;
-   -style: none;
+    }
+    .options {
+      list-style: none;
       padding: 0;
     }
     .options li {
@@ -67,40 +69,92 @@
       border-radius: 8px;
       margin-top: 20px;
     }
+    .progress-container {
+      margin-bottom: 30px;
+    }
+    .progress-text {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #00c9a7;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 12px;
+      background: #2e3e50;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00c9a7, #00b39a);
+      border-radius: 6px;
+      transition: width 0.5s ease;
+      position: relative;
+    }
+    .progress-fill::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      animation: shimmer 2s infinite;
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🧠 Mini Quiz: Você saberia identificar um golpe?</h1>
     <div id="quiz">
+      <div class="progress-container" id="progressContainer" style="display:none;">
+        <div class="progress-text" id="progressText">Pergunta 1 de 5</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 20%;"></div>
+        </div>
+      </div>
       <div class="question" id="questionText"></div>
       <ul class="options" id="optionsList"></ul>
       <button class="btn" id="nextBtn" style="display:none;">Próxima</button>
-      <button class="btn" id="restartBtn" style="display:none;">Reiniciar Quiz</button>
     </div>
     <div class="result" id="result" style="display:none;"></div>
     <div class="dica" id="dica" style="display:none;"></div>
+    <button class="btn" id="restartBtn" style="display:none;">Refazer Teste</button>
   </div>
 
   <script>
-    let perguntas = [];
-    let perguntasRestantes = [];
+    let todasPerguntas = [];
+    let perguntasSelecionadas = [];
     let pontuacao = 0;
-    let perguntaAtual = null;
+    let perguntaAtual = 0;
 
     const questionText = document.getElementById("questionText");
     const optionsList = document.getElementById("optionsList");
     const nextBtn = document.getElementById("nextBtn");
-    const restartBtn = document.getElementById("restartBtn");
     const result = document.getElementById("result");
     const dica = document.getElementById("dica");
+    const restartBtn = document.getElementById("restartBtn");
+    const progressContainer = document.getElementById("progressContainer");
+    const progressText = document.getElementById("progressText");
+    const progressFill = document.getElementById("progressFill");
 
-    fetch('quiz_questions.json') 
-      .then(response => response.json())
-      .then(data => {
-        perguntas = data;
+    async function carregarPerguntas() {
+      try {
+        const response = await fetch("quiz_questions.json");
+        const data = await response.json();
+        todasPerguntas = data;
         iniciarQuiz();
-      });
+      } catch (error) {
+        questionText.textContent = "Erro ao carregar perguntas.";
+        console.error(error);
+      }
+    }
 
     function embaralhar(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -110,29 +164,27 @@
     }
 
     function iniciarQuiz() {
-      embaralhar(perguntas);
-      perguntasRestantes = perguntas.slice(0, 5);
       pontuacao = 0;
-      perguntaAtual = null;
-      document.getElementById("quiz").style.display = "block";
+      perguntaAtual = 0;
       result.style.display = "none";
       dica.style.display = "none";
       restartBtn.style.display = "none";
-      carregarPergunta();
+      document.getElementById("quiz").style.display = "block";
+      progressContainer.style.display = "block";
+
+      embaralhar(todasPerguntas);
+      perguntasSelecionadas = todasPerguntas.slice(0, 5);
+      atualizarProgresso();
+      mostrarPergunta();
     }
 
-    function carregarPergunta() {
-      if (perguntasRestantes.length === 0) {
-        mostrarResultado();
-        return;
-      }
-
-      perguntaAtual = perguntasRestantes.pop();
-      questionText.textContent = perguntaAtual.pergunta;
+    function mostrarPergunta() {
+      const pergunta = perguntasSelecionadas[perguntaAtual];
+      questionText.textContent = pergunta.question;
       optionsList.innerHTML = "";
       nextBtn.style.display = "none";
 
-      perguntaAtual.opcoes.forEach((opcao, index) => {
+      pergunta.options.forEach((opcao, index) => {
         const li = document.createElement("li");
         li.textContent = opcao;
         li.onclick = () => verificarResposta(index, li);
@@ -140,27 +192,50 @@
       });
     }
 
+    function atualizarProgresso() {
+      const atual = perguntaAtual + 1;
+      const total = perguntasSelecionadas.length;
+      const porcentagem = (atual / total) * 100;
+
+      progressText.textContent = `Pergunta ${atual} de ${total}`;
+      progressFill.style.width = `${porcentagem}%`;
+    }
+
     function verificarResposta(indice, elemento) {
       const opcoes = optionsList.querySelectorAll("li");
       opcoes.forEach(li => li.style.pointerEvents = "none");
 
-      if (indice === perguntaAtual.correta) {
+      if (indice === perguntasSelecionadas[perguntaAtual].answer) {
         elemento.style.background = "#28a745";
         pontuacao++;
       } else {
         elemento.style.background = "#dc3545";
-        opcoes[perguntaAtual.correta].style.background = "#28a745";
+        opcoes[perguntasSelecionadas[perguntaAtual].answer].style.background = "#28a745";
       }
 
       nextBtn.style.display = "block";
     }
 
+    nextBtn.onclick = () => {
+      perguntaAtual++;
+      if (perguntaAtual < perguntasSelecionadas.length) {
+        atualizarProgresso();
+        mostrarPergunta();
+      } else {
+        mostrarResultado();
+      }
+    };
+
+    restartBtn.onclick = iniciarQuiz;
+
     function mostrarResultado() {
       document.getElementById("quiz").style.display = "none";
+      progressContainer.style.display = "none";
       result.style.display = "block";
       dica.style.display = "block";
       restartBtn.style.display = "block";
-      result.textContent = `Você acertou ${pontuacao} de 5 perguntas.`;
+
+      result.textContent = `Você acertou ${pontuacao} de ${perguntasSelecionadas.length} perguntas.`;
 
       if (pontuacao === 5) {
         dica.textContent = "Parabéns! Você está muito bem preparado para evitar golpes.";
@@ -171,8 +246,7 @@
       }
     }
 
-    nextBtn.onclick = carregarPergunta;
-    restartBtn.onclick = iniciarQuiz;
+    carregarPerguntas();
   </script>
 </body>
 </html>
