@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Apresentação - Leandro Padilha</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leandro Padilha - Apresentação</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f4f4f4;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
-    h1 {
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
     #game {
-      margin: 40px auto;
-      width: 600px;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
       height: 200px;
       background: #fff;
-      border: 2px solid #333;
-      position: relative;
+      border: 2px solid #ccc;
+      border-radius: 10px;
       overflow: hidden;
+      margin-top: 20px;
     }
+
     #dino {
       width: 40px;
       height: 40px;
-      background: green;
+      background: #4caf50;
       position: absolute;
       bottom: 0;
       left: 50px;
+      border-radius: 5px;
     }
+
     #cactus {
       width: 20px;
       height: 40px;
-      background: red;
+      background: #e53935;
       position: absolute;
       bottom: 0;
-      right: 0;
-      animation: moveCactus 2s linear infinite;
+      right: -20px;
+      border-radius: 3px;
     }
-    @keyframes moveCactus {
-      0% { right: -20px; }
-      100% { right: 100%; }
+
+    #score {
+      margin-top: 15px;
+      font-size: 1.2rem;
     }
   </style>
 </head>
@@ -52,28 +75,73 @@
   <p>Bem-vindo à minha página pessoal!</p>
 
   <h2>Jogo do Dinossauro</h2>
-  <p>Pressione qualquer tecla para pular!</p>
+  <p>Pressione qualquer tecla para pular</p>
 
   <div id="game">
     <div id="dino"></div>
     <div id="cactus"></div>
   </div>
+  <div id="score">Pontuação: 0</div>
 
   <script>
     const dino = document.getElementById("dino");
-    let isJumping = false;
+    const cactus = document.getElementById("cactus");
+    const scoreDisplay = document.getElementById("score");
 
-    document.addEventListener("keydown", () => {
-      if (!isJumping) {
-        isJumping = true;
-        dino.style.transition = "bottom 0.3s";
-        dino.style.bottom = "80px";
-        setTimeout(() => {
-          dino.style.bottom = "0";
-          setTimeout(() => isJumping = false, 300);
-        }, 300);
-      }
-    });
+    let isJumping = false;
+    let score = 0;
+    let gameOver = false;
+
+    function jump() {
+      if (isJumping || gameOver) return;
+      isJumping = true;
+      let up = 0;
+      const jumpInterval = setInterval(() => {
+        if (up >= 80) {
+          clearInterval(jumpInterval);
+          const downInterval = setInterval(() => {
+            if (up <= 0) {
+              clearInterval(downInterval);
+              isJumping = false;
+            } else {
+              up -= 5;
+              dino.style.bottom = up + "px";
+            }
+          }, 20);
+        } else {
+          up += 5;
+          dino.style.bottom = up + "px";
+        }
+      }, 20);
+    }
+
+    function moveCactus() {
+      let cactusLeft = 600;
+      const moveInterval = setInterval(() => {
+        if (gameOver) {
+          clearInterval(moveInterval);
+          return;
+        }
+
+        cactusLeft -= 5;
+        cactus.style.left = cactusLeft + "px";
+
+        if (cactusLeft < 70 && cactusLeft > 30 && parseInt(dino.style.bottom) < 40) {
+          gameOver = true;
+          alert("Game Over! Sua pontuação: " + score);
+          location.reload();
+        }
+
+        if (cactusLeft < -20) {
+          cactusLeft = 600;
+          score++;
+          scoreDisplay.textContent = "Pontuação: " + score;
+        }
+      }, 20);
+    }
+
+    document.addEventListener("keydown", jump);
+    moveCactus();
   </script>
 
 </body>
