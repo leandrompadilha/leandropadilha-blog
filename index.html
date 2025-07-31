@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leandro Padilha - Apresentação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo do Dinossauro - Leandro Padilha</title>
   <style>
     * {
       box-sizing: border-box;
@@ -71,17 +72,14 @@
 </head>
 <body>
 
-  <h1>Olá, eu sou Leandro Padilha</h1>
-  <p>Bem-vindo à minha página pessoal!</p>
-
-  <h2>Jogo do Dinossauro</h2>
+  <h1>Jogo do Dinossauro</h1>
   <p>Pressione qualquer tecla para pular</p>
 
   <div id="game">
     <div id="dino"></div>
     <div id="cactus"></div>
   </div>
-  <div id="score">Pontuação: 0</div>
+  <div id="score">Pontuação: 0 | Recorde: 0</div>
 
   <script>
     const dino = document.getElementById("dino");
@@ -90,7 +88,12 @@
 
     let isJumping = false;
     let score = 0;
+    let highScore = localStorage.getItem("highScore") || 0;
     let gameOver = false;
+
+    function updateScore() {
+      scoreDisplay.textContent = "Pontuação: " + score + " | Recorde: " + highScore;
+    }
 
     function jump() {
       if (isJumping || gameOver) return;
@@ -117,6 +120,7 @@
 
     function moveCactus() {
       let cactusLeft = 600;
+      cactus.style.left = cactusLeft + "px";
       const moveInterval = setInterval(() => {
         if (gameOver) {
           clearInterval(moveInterval);
@@ -128,6 +132,10 @@
 
         if (cactusLeft < 70 && cactusLeft > 30 && parseInt(dino.style.bottom) < 40) {
           gameOver = true;
+          if (score > highScore) {
+            highScore = score;
+            localStorage.setItem("highScore", highScore);
+          }
           alert("Game Over! Sua pontuação: " + score);
           location.reload();
         }
@@ -135,12 +143,13 @@
         if (cactusLeft < -20) {
           cactusLeft = 600;
           score++;
-          scoreDisplay.textContent = "Pontuação: " + score;
+          updateScore();
         }
       }, 20);
     }
 
     document.addEventListener("keydown", jump);
+    updateScore();
     moveCactus();
   </script>
 
